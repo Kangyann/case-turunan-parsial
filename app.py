@@ -60,13 +60,17 @@ st.dataframe(df.style.format({
 
 # Line chart
 st.subheader("📈 Grafik Line Chart: Total Biaya Produksi")
-st.line_chart(df.set_index("Hari")[["Total Biaya", "Total Reinf", "Total Gasket"]])
+# 
+st.subheader("📈 Total Biaya Produksi :")
+st.line_chart(df.set_index("Hari")[["Total Biaya"]])
+st.subheader("📈 Total Produksi Antara Gasket & Reinf :")
+st.line_chart(df.set_index("Hari")[["Total Reinf", "Total Gasket"]])
 
 
 # Pyplot chart
 st.subheader("📉 Grafik Pyplot: Total Biaya Produksi")
 fig, ax = plt.subplots()
-ax.plot(df["Hari"], df["Total Biaya"], marker="o", linestyle='-', color='green')
+ax.plot(df["Hari"], df["Total Biaya"], marker="o", linestyle='-', color='blue')
 ax.set_title("Total Biaya Produksi Harian")
 ax.set_xlabel("Hari ke-")
 ax.set_ylabel("Total Biaya (Rp)")
