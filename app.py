@@ -51,16 +51,14 @@ df = pd.DataFrame({
 
 # Tampilkan DataFrame
 st.subheader("📊 Tabel Data Simulasi Produksi")
-# st.dataframe(df.style.format({
-#     "Biaya Gasket": "Rp {:,.0f}",
-#     "Biaya Reinf": "Rp {:,.0f}",
-#     "Total Biaya": "Rp {:,.0f}",
-#     "Tambahan Biaya": "Rp {:,.0f}"
-# }))
+st.dataframe(df.style.format({
+    "Biaya Gasket": "Rp {:,.0f}",
+    "Biaya Reinf": "Rp {:,.0f}",
+    "Total Biaya": "Rp {:,.0f}",
+    "Tambahan Biaya": "Rp {:,.0f}"
+}))
 
 # Line chart
-st.subheader("📈 Grafik Line Chart: Total Biaya Produksi")
-# 
 st.subheader("📈 Total Biaya Produksi :")
 st.line_chart(df.set_index("Hari")[["Total Biaya"]])
 st.subheader("📈 Total Produksi Antara Gasket & Reinf :")
