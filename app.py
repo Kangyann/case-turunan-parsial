@@ -5,8 +5,7 @@ import matplotlib.pyplot as plt
 
 # Set judul halaman
 st.set_page_config(page_title="Simulasi Produksi Gasket & Reinf", layout="centered")
-st.title("📦 Simulasi Biaya Produksi Harian (Gasket & Reinf)")
-st.title("Kelompok 6" )
+st.title("📦 Simulasi Biaya Produksi Harian (Gasket & Reinf) --")
 
 # Konstanta produksi
 lot_gasket = 3600
