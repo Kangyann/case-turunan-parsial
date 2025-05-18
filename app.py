@@ -39,13 +39,13 @@ tambahan_biaya = total_biaya - biaya_awal
 # Buat DataFrame hasil simulasi
 df = pd.DataFrame({
     "Hari": np.arange(1, hari_kerja + 1),
-    "Tambahan Gasket": tambahan_gasket,
-    "Tambahan Reinf": tambahan_reinf,
     "Total Gasket": produksi_gasket_harian,
     "Total Reinf": produksi_reinf_harian,
     "Biaya Gasket": biaya_gasket,
     "Biaya Reinf": biaya_reinf,
     "Total Biaya": total_biaya,
+    "Tambahan Gasket": tambahan_gasket,
+    "Tambahan Reinf": tambahan_reinf,
     "Tambahan Biaya": tambahan_biaya
 })
 
