@@ -76,3 +76,5 @@ ax.set_xlabel("Hari ke-")
 ax.set_ylabel("Total Biaya (Rp)")
 ax.grid(True)
 st.pyplot(fig)
+
+
