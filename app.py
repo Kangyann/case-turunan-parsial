@@ -10,18 +10,18 @@ st.title("📦 Simulasi Biaya Produksi Harian (Gasket & Reinf) --")
 # Konstanta produksi
 lot_gasket = 3600
 lot_reinf = 880
-harga_gasket = 50000.0     # harga per pcs (dalam float)
-harga_reinf = 200000.0     # harga per pcs (dalam float)
+harga_gasket = 20000.0     # harga per pcs (dalam float)
+harga_reinf = 100000.0     # harga per pcs (dalam float)
 hari_kerja = 22
 
 # Produksi dasar
-produksi_gasket_awal = 72000
-produksi_reinf_awal = 2640
+produksi_gasket_awal = 5*lot_gasket
+produksi_reinf_awal = 3*lot_reinf
 
 # Simulasi tambahan harian (acak)
 np.random.seed(42)
 tambahan_gasket = np.random.randint(0, lot_gasket + 1, hari_kerja)
-tambahan_reinf = np.random.randint(0, 808 + 1, hari_kerja)
+tambahan_reinf = np.random.randint(0, lot_reinf + 1, hari_kerja)
 
 # Total produksi per hari
 produksi_gasket_harian = produksi_gasket_awal + tambahan_gasket
