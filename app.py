@@ -15,8 +15,8 @@ harga_reinf = 100000.0     # harga per pcs (dalam float)
 hari_kerja = 22
 
 # Produksi dasar
-produksi_gasket_awal = 5*lot_gasket
-produksi_reinf_awal = 3*lot_reinf
+produksi_gasket_awal = 5 * lot_gasket
+produksi_reinf_awal = 3 * lot_reinf
 
 # Simulasi tambahan harian (acak)
 np.random.seed(42)
@@ -60,7 +60,7 @@ st.dataframe(df.style.format({
 
 # Line chart
 st.subheader("📈 Grafik Line Chart: Total Biaya Produksi")
-st.line_chart(df.set_index("Hari")[["Total Biaya"]])
+st.line_chart(df.set_index("Hari")[["Total Biaya"],["Total Reinf"],["Total Gasket"]])
 
 # Pyplot chart
 st.subheader("📉 Grafik Pyplot: Total Biaya Produksi")
