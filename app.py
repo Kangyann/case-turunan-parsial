@@ -60,9 +60,9 @@ st.dataframe(df.style.format({
 
 # Line chart
 st.subheader("📈 Grafik Line Chart: Total Biaya Produksi")
-st.line_chart(df.set_index("Hari")[["Total Biaya"])
-st.line_chart(df.set_index("Hari")[["Total Reinf"])
-st.line_chart(df.set_index("Hari")[["Total Gasket"])
+st.line_chart(df.set_index("Hari")[["Total Biaya"]])
+st.line_chart(df.set_index("Hari")[["Total Reinf"]])
+st.line_chart(df.set_index("Hari")[["Total Gasket"]])
 
 # Pyplot chart
 st.subheader("📉 Grafik Pyplot: Total Biaya Produksi")
