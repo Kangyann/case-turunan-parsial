@@ -51,8 +51,8 @@ df = pd.DataFrame({
 
 # Tampilkan DataFrame
 st.subheader("📊 Tabel Data Simulasi Produksi")
-st.write("Target Gasket Perhari : ", produksi_gasket_awal)
-st.write("Target Reinf Perhari : ", produksi_reinf_awal)
+st.subheader("Target Gasket Perhari : ", produksi_gasket_awal)
+st.subheader("Target Reinf Perhari : ", produksi_reinf_awal)
 
 st.dataframe(df.style.format({
     "Biaya Gasket": "Rp {:,.0f}",
